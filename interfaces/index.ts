@@ -1,18 +1,18 @@
-// Shared types/interfaces across the app
-
-export interface Listing {
-  id: string;
-  title: string;
-  description: string;
-  imageUrl?: string;
-  price?: number;
-  location?: string;
-  createdAt?: string;
-}
-
-export interface User {
-  id: string;
+export interface PropertyProps {
   name: string;
-  email: string;
-  avatarUrl?: string;
+  address: {
+    state: string;
+    city: string;
+    country: string;
+  };
+  rating: number;
+  category: string[];
+  price: number;
+  offers: {
+    bed: string;
+    shower: string;
+    occupants: string;
+  };
+  image: string;
+  discount?: string;
 }

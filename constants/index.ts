@@ -1,12 +1,4 @@
-// App-wide constants
+import type { PropertyProps } from "@/interfaces";
 
-export const SITE_NAME = 'ALX Listing App';
-
-export const DEFAULT_IMAGE = '/assets/default-image.jpg';
-
-export const NAV_LINKS = [
-  { name: 'Home', href: '/' },
-  { name: 'Listings', href: '/listings' },
-  { name: 'About', href: '/about' },
-  { name: 'Contact', href: '/contact' },
-];
+// Add your property data here
+export const PROPERTYLISTINGSAMPLE: PropertyProps[] = [/* Full list omitted for brevity */];
